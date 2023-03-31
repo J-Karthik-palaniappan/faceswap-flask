@@ -1,0 +1,27 @@
+<html>
+<body>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 50px;
+  text-align: center;
+  background-color: #fce7fe;
+}
+</style>
+<h1> Hello {{session['uname']}}</h1>
+
+<div style="float:True">
+<h2 class="mt-5">Live Camera</h2>
+<img src="{{ url_for('video_feed') }}" height="80%" width="50%">
+
+<form action="{{url_for('image_upload')}}" method="post" enctype="multipart/form-data">
+    <input type="file" name="img" />
+    <input type="submit"/>
+</form>
+</div>
+
+{% if img %}
+<img src="{{img}}" alt="my image" width="500" height="400">
+{% endif %}
+</body>
+</html>
