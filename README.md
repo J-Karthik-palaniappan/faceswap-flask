@@ -12,11 +12,14 @@ front-end with flask
  * A simple login/signup portal in flask
  * Live video in second page with place for uploading the source image
 
-Run app.py file and it opens the webpage in localHost
-This also needs 'mysql'
-mydb = mysql.connector.connect(
-    host="localhost",
-    user="root",
-    password="1234"
-)
-enter your username and password there
+# Running
+ * Run app.py file and it opens the webpage in localHost
+ * This also needs 'mysql'
+ * Inside logindatabase.py:
+    mydb = mysql.connector.connect( \
+       host="localhost", \
+       user="root", \
+       password="1234" \
+     ) \
+    enter your username and password there \
+   Run the commented code once for creating the database.
