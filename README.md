@@ -11,3 +11,5 @@ front-end with flask
 
  * A simple login/signup portal in flask
  * Live video in second page with place for uploading the source image
+
+Run app.py file and it opens the webpage in localHost
